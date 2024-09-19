@@ -1,0 +1,31 @@
+/* Weather.css */
+
+.input-search {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .weather-details {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  .weather-box {
+    text-align: center;
+  }
+  
+  .weather-icon {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .temp {
+      font-size: 3rem;
+    }
+  }
+  
