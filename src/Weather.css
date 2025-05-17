@@ -1,31 +1,41 @@
-/* Weather.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.input-search {
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 16px;
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.5s ease;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+  outline: none;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+
+.weather-transition {
+  transition: all 0.3s ease-out;
+}
+
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+}
+
+
+@media (max-width: 640px) {
+  .weather-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .weather-details {
-    width: 100%;
-    max-width: 600px;
-    background-color: #f7f7f7;
-    border-radius: 12px;
-    padding: 20px;
-  }
-  
-  .weather-box {
-    text-align: center;
-  }
-  
-  .weather-icon {
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .temp {
-      font-size: 3rem;
-    }
-  }
-  
+}
